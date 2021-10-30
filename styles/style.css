@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,100;1,300;1,400&display=swap');
+
+/* Formatação geral */
+* {
+    padding: 0; margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --cont: #eee;
+    --h1: #63C96A;
+    --legendas: #37683b;
+    --box: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10% 5%;
+    gap: 15px;
+    min-height: 100vh;
+    background-color: var(--cont);
+}
+
+.container .conteudo {
+    flex: 1 1 300px;
+}
+
+.container .conteudo h1 {
+    color: var(--h1);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.container .conteudo p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container .conteudo span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--legendas);
+    margin-bottom: 15px;
+}
+
+.container .conteudo .clock{
+   display: flex;
+   gap: 20px;
+   font-weight: 600;
+}
+
+.container .conteudo .clock .box{
+    padding: 8px;
+    background-color: var(--box);
+    border: 1px solid var(--legendas);
+    text-align: center;
+    flex: 1 1 10px;
+}
+
+.container .conteudo .clock  h3{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--legendas);
+}
+
+.container .conteudo .clock span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--legendas);
+}
+ 
+.container .imagem {
+    flex: 1 1 300px;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width:600px) {
+    .container {
+        padding: 5% 2.5%;
+    }
+    .container .conteudo {
+        text-align: center;
+    }
+    .container .conteudo h1 {
+        font-size: 2rem;
+    }
+    .container .conteudo p {
+        font-size: 1.3rem;
+    }
+    .container .conteudo .clock{
+        gap: 10px;
+    }
+    .container .conteudo .clock .box{
+        padding: 5px;
+    }
+    .container .conteudo .clock  h3{
+        font-size: 2.5rem;
+    }
+    .container .conteudo .clock  span{
+        font-size: 1rem;
+    }
+}
